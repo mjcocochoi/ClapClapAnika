@@ -1,0 +1,220 @@
+/* My Custom Style Sheet */
+
+/* ---------------------------- GENERAL STYLING ---------------------------- */
+body{
+    position: relative;
+    min-height: 100%;
+    color: #2d2d2d;
+    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+h2{
+    font-family: 'Acme', sans-serif;
+    font-size: 3em;
+}
+/* ---------------------------- NAVBAR ---------------------------- */
+.navbar-default .navbar-brand{
+    color: #ff9a03;
+    font-family: 'Acme', sans-serif;
+    font-style: italic;
+}
+
+.navbar-default .navbar-brand:hover{
+    color: #ff9a03;
+}
+
+.navbar-static-top{
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+}
+
+.navbar-default.rollout { 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 6px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 6px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 6px;
+    opacity: .9;
+}
+
+#social-navbar {
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#social-navbar a{
+    color: #999999;
+    padding-bottom: 12px;
+}
+
+
+#social-navbar a:hover{
+    color: #ff7f7f;
+    border-bottom: 3px solid #ff7f7f;
+}
+
+.content-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-default{
+    color: #4d4d4d;
+    font-weight: 500;
+}
+
+/* ---------------------------- MAIN NAVBAR ---------------------------- */
+
+#main-navbar{
+    z-index: 999;
+}
+
+/* ---------------------------- MAIN ---------------------------- */
+
+h1{
+    text-align: center;
+}
+
+#main-div{
+    padding-top: 70px;
+}
+
+#title-img{
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------------- NEWSLETTER SUBSCRIPTION ---------------------------- */
+
+#newsletter-div{
+    background-color: #ff7f7f;
+    border-bottom: 1px solid #afafaf;
+    border-top: 1px solid #afafaf;
+    padding: 22px 0;
+}
+
+#newsletter-div p{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#form-div{
+    padding-top: 40px;
+}
+
+#subscribe-form{
+    vertical-align: inherit;
+}
+
+#feedback-text{
+    text-align: center;
+}
+
+/* ---------------------------- ABOUT ANIKA ---------------------------- */
+
+#about-div{
+    padding-bottom: 30px;
+}
+
+#about-div p{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+#about-text{
+    color: #ff9a03;
+}
+
+/* ---------------------------- FEATURES ---------------------------- */
+
+#features-div{
+    padding-bottom: 40px;
+    background: url('../img/temp-bg.png');
+    background-repeat: repeat;
+    
+    margin-bottom: 0px;
+}
+
+#feature1{
+    color: #ff7f7f;
+}
+
+#feature2{
+    color: #25adbd;
+}
+
+#feature3{
+    color: #337ab7;
+}
+
+/* ---------------------------- FEEDBACK ---------------------------- */
+
+#feedback-div{
+    background-color: #fac253;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+/* ---------------------------- FOOTER ---------------------------- */
+
+#footer-navbar{
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fdfdfd;
+    border-top: 1px solid #e7e7e7;
+}
+
+#footer-navbar a{
+    color: #ff7f7f;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+#footer-navbar a:hover{
+    color: #ff7f7f;
+}
+
+#footer-navbar .navbar-right p{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 300;
+    color: #999999;
+}
+
+/* ////////////////////////// RESPONSIVE ////////////////////////// */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
