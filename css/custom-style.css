@@ -2,6 +2,7 @@
 
 /* ---------------------------- GENERAL STYLING ---------------------------- */
 body{
+    font-family: 'Open Sans', sans-serif;
     position: relative;
     min-height: 100%;
     color: #2d2d2d;
@@ -26,10 +27,17 @@ h3{
     margin: 0;
 }
 
+.orange-text{
+    color: #ff9a03;
+}
+
+.header-text{
+    padding-bottom: 20px;
+}
+
 /* ---------------------------- NAVBAR ---------------------------- */
 .navbar-default .navbar-brand{
     color: #ff9a03;
-    font-family: 'Acme', sans-serif;
     font-style: italic;
 }
 
@@ -51,18 +59,18 @@ h3{
     opacity: .9;
 }
 
-#social-navbar {
+#navbar-menu {
     text-transform: uppercase;
     font-family: 'Varela Round', sans-serif;
 }
 
-#social-navbar a{
+#navbar-menu a{
     color: #999999;
     padding-bottom: 12px;
 }
 
 
-#social-navbar a:hover{
+#navbar-menu a:hover{
     color: #ff9a03;
     border-bottom: 3px solid #ff9a03;
 }
@@ -102,19 +110,45 @@ h1{
     background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 40%, rgba(255,253,247,1) 100%);
 }
 
-/*
-#title-img{
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
-*/
-
-#main-img{
+#title-gif {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+    background-image: url('../img/title_spritesheet2.png');
+    
+    -webkit-animation: play 1s steps(10) infinite;
+       -moz-animation: play 1s steps(10) infinite;
+        -ms-animation: play 1s steps(10) infinite;
+         -o-animation: play 1s steps(10) infinite;
+            animation: play 1s steps(10) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -5000px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -5000px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -5000px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -5000px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -5000px; }
 }
 
 /* ---------------------------- NEWSLETTER SUBSCRIPTION ---------------------------- */
@@ -140,6 +174,7 @@ h1{
 }
 
 #feedback-text{
+    color: #4a400d;
     text-align: center;
 }
 
@@ -153,10 +188,6 @@ h1{
 #about-div p{
     font-size: 1.2em;
     padding-bottom: 10px;
-}
-
-#about-text{
-    color: #ff9a03;
 }
 
 /* ---------------------------- FEATURES ---------------------------- */
@@ -181,29 +212,49 @@ h1{
     color: #25adbd;
 }
 
+
+/* ---------------------------- TEAM ---------------------------- */
+
+#team-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-founder{
+    padding-bottom: 30px;
+}
+
+.team-profile{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.founder-name{
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team-bio{
+    text-align: left;
+    line-height: 22px;
+    color: #4d4d4d;
+}
+
 /* ---------------------------- FEEDBACK ---------------------------- */
 
 #feedback-div{
-    background-color: #fac253;
+    background-color: #f2f2f2;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
     color: #ffffff;
 }
 
-
-
-
-#team-list1{
-    padding-top: 30px;
+#feedback-text{
+    color: #2d2d2d;
 }
-
-#team-list2{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
 
 
 /* ---------------------------- FOOTER ---------------------------- */
@@ -212,12 +263,12 @@ h1{
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: #fdfdfd;
+    background-color: #ffffff;
     border-top: 1px solid #e7e7e7;
 }
 
 #footer-navbar a{
-    color: #ff7f7f;
+    color: #ffa200;
     font-family: 'Varela Round', sans-serif;
 
 }
@@ -230,7 +281,6 @@ h1{
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: 300;
     color: #999999;
 }
 
@@ -244,12 +294,15 @@ h1{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .col-sm-6{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
