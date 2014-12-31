@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-<!--     <link rel="icon" href="../../favicon.ico"> -->
 
-        <title>Clap Clap Apps Landing page</title>
+<head>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/custom-style.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anika &amp; Sid's Adventures</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-style.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </head>
 
-    <body>
-        <!-- Static navbar -->
-        <nav id="main-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!---------- NAVIGATION ---------->
+    <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Clap Clap LOGO</a>
-                </div> <!--/.navbar-header -->
-                
-                <div id="navbar-menu" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">     
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Meet the Team</a></li>
-                    </ul>
-                </div> <!--/.nav-collapse -->
-            </div> <!--/.container -->
-        </nav>
-        <div id="main-div" class="jumbotron">
-        <div class="container content-center">
-<!--        <img id="title-img" class="img-responsive" src="img/Anika_title.png">-->
-<!--        <img id="main-img" class="img-responsive" src="img/title_spritesheet.png">-->
-            <div id="title-gif"></div>
-                
-        </div>
+                <a class="navbar-brand page-scroll" href="#page-top">Clap Clap LOGO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="navbar-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a class="navbar-brand page-scroll" href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#features">Features</a></li>
+                    <li><a class="page-scroll" href="#team">Meet The Team</a></li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav>
+
+<!---------- INTRO SECTION ---------->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div id="title-gif"></div>
+                </div>
+            </div>
         </div>
         
         <div id="newsletter-div" class="jumbotron">
@@ -75,78 +86,82 @@
                 </div>
             </div>
         </div>
-      
-        <div id="about-div" class="container">
+    </section>
+
+<!---------- ABOUT SECTION ---------->
+    <section id="about" class="about-section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12">
                     <h2 class="orange-text header-text">ABOUT ANIKA &amp; SID</h2>
                     <img class="img-responsive" src="img/anika_sid.png">
 
-                    <p>A series of interactive stories, which feature the amusing and everyday adventures in the life of Anika, an American born child, and her Indian cousin Sid. The emphasis is on developing a cultural context for NRI children within a recognisable American setting. Gaming elements promote effortless Hindi vocabulary building. A lively cast with parents, friends, and Billi the funny cat make this app a vibrant and relatable experience that kids will want to return to.</p>
-<!--                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+                    <p>Charming interactive stories for kids of South Asian descent familiarizing them with Indian culture and speech. This series features the amusing and everyday adventures in the life of Anika, an American born child, and her Indian cousin 
+
+Sid.</p>
                 </div>
             </div>
         </div>
-        
-        <div id="features-div" class="jumbotron">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="header-text">FUN AND EASY!</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="img/temp-stock-img.jpg" width="94%">
-                    </div>
-                    <div class="col-md-7">
-                        <h3 id="feature1">Education</h3>
-                            <p>Donec sed odio dui. Cras justo odio...</p>
-                        <h3 id="feature2">Culture</h3>
-                            <p>Donec sed odio dui. Cras justo odio...</p>
-                        <h3 id="feature3">Design</h3>
-                            <p>Donec sed odio dui. Cras justo odio...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="team-div" class="container">
+    </section>
+
+<!---------- FEATURES SECTION ---------->
+    <section id="features" class="features-section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="header-text">FEATURES</h2>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/temp-stock-img.jpg" width="94%">
+                </div>
+                <div class="col-md-6">
+                    <h3 id="feature1">Cultural!</h3>
+                    <p>Exposes children to the language and culture of India.</p>
+                    <h3 id="feature2">Vibrant!</h3>
+                    <p>Features a lively cast with parents, friends, and Billi the funny cat.</p>
+                    <h3 id="feature3">Multidimensional!</h3>
+                    <p>Loaded with visual, auditory, and touch elements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------- TEAM SECTION ---------->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
                     <h2 class="orange-text header-text">THE TEAM</h2>
                 </div>
-                <div class="row">
-                    <div class="team-founder col-md-3 col-sm-6 col-xs-12">
-                        <div class="team-profile">
-                            <img class="team-pic" src="img/founders_Almaz.png" width="75%">
-                            <h5 class="founder-name">Almaz Nanjappa</h5>
-                        </div>
-                        <h7 class="team-bio">Almaz Nanjappa is a Silicon Valley veteran, who has been working with mobile technology since its inception. Almaz recently led the Electronic-Paper initiatives at NOOK for its ever popular NOOK e-Readers. Prior to that, Almaz led the Mobile Client team at Adobe Systems where he pioneered several initiatives working with mobile giants like Qualcomm, T-Mobile, Nokia and Research In Motion. Almaz, a proud Badger, holds a degree in Computer Science and Math from University of Wisconsin-Madison.</h7>
+                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-profile">
+                        <img class="team-pic" src="img/founders_Almaz.png" width="75%">
+                        <h5 class="founder-name">Almaz Nanjappa</h5>
                     </div>
-                    <div class="team-founder col-md-3 col-sm-6 col-xs-12">
-                        <div class="team-profile">
-                            <img class="team-pic" src="img/founders_Komal.png" width="75%">
-                            <h5 class="founder-name">Komal Shah</h5>
-                        </div>
-                        <h7 class="team-bio">Komal Shah is an entrepreneurial anthropologist whose strategic cultural insights have led to the formation of many unique business ideas. She is the Founder of MYNA, a distributor of Indian lifestyle products in the USA, and a former CEO of Cook Aunty, a NYC-based company that sent chefs home to cook gourmet meals. She has led several corporate consumer research and trend initiatives across industries, media, and age segments. Komal holds an interdisciplinary Ph.D. from Wayne State University in Michigan where she specialized in inter-generational communication of cultural identity of diasporic South Asians. </h7>
-                    </div>
-                    <div class="team-founder col-md-3 col-sm-6 col-xs-12">
-                        <div class="team-profile">
-                        <img class="team-pic" src="img/founders_Karishma.png" width="75%">
-                        <h5 class="founder-name">Karishma Attari</h5>
-                        </div>
-                        <h7 class="team-bio">Karishma Attari is a storyteller who is excited by how the magic of narrative beguiles every generation in its own way. She is the passionate Founder of The Super Readers Club, a reading program that encourages children in Mumbai to discover the book lover that lurks within. A published poet and an agented YA novelist, Karishma also reviews books for national dailies and magazines. With a background in theatre, magazine editing, and copywriting, Karishma loves communicating big ideas through small mediums. Karishma holds the Vice Chancellor’s award from the University of Mumbai where she won a gold medal at the MA in English.</h7>
-                    </div>
-                    <div class="team-founder col-md-3 col-sm-6 col-xs-12">
-                        <div class="team-profile">
-                        <img class="team-pic" src="img/founders_Chetan.png" width="75%">
-                        <h5 class="founder-name">Chetan Sharma</h5>
-                        </div>
-                        <h7 class="team-bio">Chetan Sharma is an award-winning animation filmmaker, writer, designer &amp; voice artist, and the co-founder &amp; director of Animagic, one of India's most reputed independent animation studios. A self-taught artist with over 20 years of experience in animation, he has also designed Bollywood live action features, ads for all major brands &amp; a dozen children books. Chetan has produced, written &amp; directed two feature films ('Swami Ayyappan' 2014,  and 'Tripura' 2011) and three short films ('MAAAa-a-a!!!' 2006, 'Chakachak' 2004', and Raju &amp; I' 2003) in animation, all of which have won numerous awards including the National award by the President of India.</h7>
-                    </div>
+                    <h7 class="team-bio">Almaz Nanjappa is a Silicon Valley veteran, who has been working with mobile technology since its inception. Almaz recently led the Electronic-Paper initiatives at NOOK for its ever popular NOOK e-Readers. Prior to that, Almaz led the Mobile Client team at Adobe Systems where he pioneered several initiatives working with mobile giants like Qualcomm, T-Mobile, Nokia and Research In Motion. Almaz, a proud Badger, holds a degree in Computer Science and Math from University of Wisconsin-Madison.</h7>
                 </div>
-            </div>
+                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-profile">
+                        <img class="team-pic" src="img/founders_Komal.png" width="75%">
+                        <h5 class="founder-name">Komal Shah</h5>
+                    </div>
+                    <h7 class="team-bio">Komal Shah is an entrepreneurial anthropologist whose strategic cultural insights have led to the formation of many unique business ideas. She is the Founder of MYNA, a distributor of Indian lifestyle products in the USA; Founder of Edgewater Life; and a former CEO of Cook Aunty, a NYC-based company that sent chefs home to cook gourmet meals. She has led several corporate consumer research and trend initiatives across industries, media, and age segments. Komal holds an interdisciplinary Ph.D. from Wayne State University in Michigan where she specialized in inter-generational communication of cultural identity of diasporic South Asians.</h7>
+                </div>
+                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-profile">
+                    <img class="team-pic" src="img/founders_Karishma.png" width="75%">
+                    <h5 class="founder-name">Karishma Attari</h5>
+                    </div>
+                    <h7 class="team-bio">Karishma Attari is a storyteller who is excited by how the magic of narrative beguiles every generation in its own way. She is the passionate Founder of The Super Readers Club, a reading program that encourages children in Mumbai to discover the book lover that lurks within. A published poet and an agented YA novelist, Karishma also reviews books for national dailies and magazines. With a background in theatre, magazine editing, and copywriting, Karishma loves communicating big ideas through small mediums. Karishma holds the Vice Chancellor’s award from the University of Mumbai where she won a gold medal at the MA in English.</h7>
+                </div>
+                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-profile">
+                    <img class="team-pic" src="img/founders_Chetan.png" width="75%">
+                    <h5 class="founder-name">Chetan Sharma</h5>
+                    </div>
+                    <h7 class="team-bio">Chetan Sharma is an award-winning animation filmmaker, writer, designer &amp; voice artist, and the co-founder &amp; director of Animagic, one of India's most reputed independent animation studios. A self-taught artist with over 20 years of experience in animation, he has also designed Bollywood live action features, ads for all major brands &amp; a dozen children books. Chetan has produced, written &amp; directed two feature films ('Swami Ayyappan' 2014,  and 'Tripura' 2011) and three short films ('MAAAa-a-a!!!' 2006, 'Chakachak' 2004', and Raju &amp; I' 2003) in animation, all of which have won numerous awards including the National award by the President of India.</h7>
+                </div>
+            </div>  
         </div>
         
         <div id="feedback-div" class="jumbotron">
@@ -175,11 +190,18 @@
                 </ul>
             </div>
         </footer>
+    </section>
+<!-- ========================== JAVASCRIPT ======================== -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="js/custom-script.js"></script>
     
-        <!-- ========================== JAVASCRIPT ======================== -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="jquery-1.3.2.js"></script>
-        <script type="text/javascript" src="js/custom-script.js"></script>
-    </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/custom-script.js"></script>
+
+</body>
+
 </html>

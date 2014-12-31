@@ -1,24 +1,10 @@
 $(function() {
-    $(window).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop != 0)
-            $('#main-navbar').stop().animate({'opacity':'0.9'},300);
-        else   
-            $('#main-navbar').stop().animate({'opacity':'1'},400);
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
     });
-     
-    $('#main-navbar').hover(
-        function (e) {
-            var scrollTop = $(window).scrollTop();
-            if(scrollTop != 0){
-                $('#main-navbar').stop().animate({'opacity':'1'},200);
-            }
-        },
-        function (e) {
-            var scrollTop = $(window).scrollTop();
-            if(scrollTop != 0){
-                $('#main-navbar').stop().animate({'opacity':'0.9'},400);
-            }
-        }
-    );
 });
