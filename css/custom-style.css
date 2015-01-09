@@ -54,6 +54,11 @@ h3{
     padding-top: 70px;
 }
 
+.about-section {
+    height: 100%;
+    padding-top: 100px;
+}
+
 .features-section {
     height: 100%;
     padding-top: 100px;
@@ -189,11 +194,6 @@ h3{
 }
 
 /* ---------------------------- ABOUT ---------------------------- */
-.about-section {
-    height: 100%;
-    padding-top: 100px;
-}
-
 #about-div{
     padding-top: 30px;
     padding-bottom: 30px;
