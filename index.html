@@ -9,14 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Anika &amp; Sid's Adventures</title>
+    <title>Clap Clap</title>
 
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom-style.css" rel="stylesheet">
-    
-    <link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,75 +32,67 @@
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" class="index">
 
-<!---------- NAVIGATION ---------->
-    <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Clap Clap LOGO</a>
+                <a class="navbar-brand" href="#page-top">Clap Clap Apps</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="navbar-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden"><a class="navbar-brand page-scroll" href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#features">Features</a></li>
-                    <li><a class="page-scroll" href="#team">Meet The Team</a></li>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#features">Features</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </div> <!-- /.navbar-collapse -->
-        </div> <!-- /.container -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
-<!---------- INTRO SECTION ---------->
-    <section id="intro" class="intro-section">
+    <!-- Header -->
+    <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
+                <div class="col-lg-12">
                     <div id="title-gif"></div>
                 </div>
             </div>
         </div>
-        
-        <div id="newsletter-div" class="jumbotron">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Be The First To Know</h3>
-                        <p> Subscribe to our newsletter to get notified on the app's release!</p>
-                    </div>
-                    <div class="col-md-6" id="form-div">
-                        <form class="navbar-form navbar-right" role="form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group" id="subscribe-form">
-                                <p><a class="btn btn-default btn-med" href="#" role="button">Subscribe</a></p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </header>
 
-<!---------- ABOUT SECTION ---------->
-    <section id="about" class="about-section">
+    <!-- About Section -->
+    <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <h2 class="orange-text header-text">ABOUT ANIKA &amp; SID</h2>
+                <div class="col-lg-12 text-center">
+                    <h2>About Anika &amp; Sid</h2>
                     <img class="img-responsive" src="img/anika_sid.png">
-
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-11 col-lg-offset-1">
                     <p>Charming interactive stories for kids of South Asian descent familiarizing them with Indian culture and speech. This series features the amusing and everyday adventures in the life of Anika, an American born child, and her Indian cousin 
 
 Sid.</p>
@@ -104,17 +101,21 @@ Sid.</p>
         </div>
     </section>
 
-<!---------- FEATURES SECTION ---------->
-    <section id="features" class="features-section">
+    
+    <!-- Features Grid Section -->
+    <section id="features">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <h2 class="header-text">FEATURES</h2>
+                <div class="col-lg-12 text-center">
+                    <h2>Features</h2>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/temp-stock-img.jpg" width="94%">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-responsive" src="img/temp-stock-img.jpg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
+                    <div class="clearfix"></div>
                     <h3 id="feature1">Cultural!</h3>
                     <p>Exposes children to the language and culture of India.</p>
                     <h3 id="feature2">Vibrant!</h3>
@@ -125,82 +126,102 @@ Sid.</p>
             </div>
         </div>
     </section>
-
-<!---------- TEAM SECTION ---------->
-    <section id="team" class="team-section">
+    
+    
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <h2 class="orange-text header-text">THE TEAM</h2>
+                <div class="col-lg-12 text-center">
+                    <h2>Meet The Team</h2>
                 </div>
-                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+            </div>
+            <div class="row">
+                <div class="team-founder col-lg-3 col-sm-6 col-xs-12">
                     <div class="team-profile">
                         <img class="team-pic" src="img/founders_Almaz.png" width="75%">
                         <h5 class="founder-name">Almaz Nanjappa</h5>
                     </div>
                     <h7 class="team-bio">Almaz Nanjappa is a Silicon Valley veteran, who has been working with mobile technology since its inception. Almaz recently led the Electronic-Paper initiatives at NOOK for its ever popular NOOK e-Readers. Prior to that, Almaz led the Mobile Client team at Adobe Systems where he pioneered several initiatives working with mobile giants like Qualcomm, T-Mobile, Nokia and Research In Motion. Almaz, a proud Badger, holds a degree in Computer Science and Math from University of Wisconsin-Madison.</h7>
                 </div>
-                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                <div class="team-founder col-lg-3 col-sm-6 col-xs-12">
                     <div class="team-profile">
                         <img class="team-pic" src="img/founders_Komal.png" width="75%">
                         <h5 class="founder-name">Komal Shah</h5>
                     </div>
                     <h7 class="team-bio">Komal Shah is an entrepreneurial anthropologist whose strategic cultural insights have led to the formation of many unique business ideas. She is the Founder of MYNA, a distributor of Indian lifestyle products in the USA; Founder of Edgewater Life; and a former CEO of Cook Aunty, a NYC-based company that sent chefs home to cook gourmet meals. She has led several corporate consumer research and trend initiatives across industries, media, and age segments. Komal holds an interdisciplinary Ph.D. from Wayne State University in Michigan where she specialized in inter-generational communication of cultural identity of diasporic South Asians.</h7>
                 </div>
-                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                <div class="team-founder col-lg-3 col-sm-6 col-xs-12">
                     <div class="team-profile">
                     <img class="team-pic" src="img/founders_Karishma.png" width="75%">
                     <h5 class="founder-name">Karishma Attari</h5>
                     </div>
                     <h7 class="team-bio">Karishma Attari is a storyteller who is excited by how the magic of narrative beguiles every generation in its own way. She is the passionate Founder of The Super Readers Club, a reading program that encourages children in Mumbai to discover the book lover that lurks within. A published poet and an agented YA novelist, Karishma also reviews books for national dailies and magazines. With a background in theatre, magazine editing, and copywriting, Karishma loves communicating big ideas through small mediums. Karishma holds the Vice Chancellor’s award from the University of Mumbai where she won a gold medal at the MA in English.</h7>
                 </div>
-                <div class="team-founder col-md-3 col-sm-6 col-xs-12">
+                <div class="team-founder col-lg-3 col-sm-6 col-xs-12">
                     <div class="team-profile">
                     <img class="team-pic" src="img/founders_Chetan.png" width="75%">
                     <h5 class="founder-name">Chetan Sharma</h5>
                     </div>
                     <h7 class="team-bio">Chetan Sharma is an award-winning animation filmmaker, writer, designer &amp; voice artist, and the co-founder &amp; director of Animagic, one of India's most reputed independent animation studios. A self-taught artist with over 20 years of experience in animation, he has also designed Bollywood live action features, ads for all major brands &amp; a dozen children books. Chetan has produced, written &amp; directed two feature films ('Swami Ayyappan' 2014,  and 'Tripura' 2011) and three short films ('MAAAa-a-a!!!' 2006, 'Chakachak' 2004', and Raju &amp; I' 2003) in animation, all of which have won numerous awards including the National award by the President of India.</h7>
                 </div>
-            </div>  
+            </div>
         </div>
-        
-        <div id="feedback-div" class="jumbotron">
-            <div class="container center-content">
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h3 id="feedback-text">Contact Us</h3>
-                            <ul class="pager">
-                                <li><a href="#">T</a></li>
-                                <li><a href="#">F</a></li>
-                                <li><a href="#">Email</a></li>
-                            </ul>
+                    <div class="footer-col col-lg-12">
+                        <h3>Contact Us</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope-o"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <footer id="footer-navbar" class="footer">
+        <div class="footer-below">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><p>© 2012-2014 Momentus Software Inc.</p></li>
-                </ul>
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 Momentus Software Inc.
+                    </div>
+                </div>
             </div>
-        </footer>
-    </section>
-<!-- ========================== JAVASCRIPT ======================== -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="jquery-1.3.2.js"></script>
-    <script type="text/javascript" src="js/custom-script.js"></script>
-    
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/custom-script.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 
