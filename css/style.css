@@ -28,7 +28,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #ff9a03;
+    color: #ffa500;
 }
 
 .btn-outline {
@@ -44,7 +44,7 @@ a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #ff9a03;
+    color: #ffa500;
     background: #fff;
 }
 
@@ -55,8 +55,18 @@ a.active {
 /* HEADER */
 
 header {
-    color: #fff;
+    text-align: center;
 }
+/*
+
+header h2{
+    padding-top: 50px;
+    text-transform: none;
+    color: #ffa500;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+*/
 
 header .container {
     padding-top: 100px;
