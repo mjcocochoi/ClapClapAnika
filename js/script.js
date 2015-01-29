@@ -1,6 +1,6 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    var threshold = 629;
+    var threshold = 929;
     var initialDiff = ($(window).width() >= threshold) ? 1:-1;
 
     $(window).on('resize',function(e){
