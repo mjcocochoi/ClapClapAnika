@@ -272,24 +272,30 @@ footer .footer-below {
     overflow: hidden;
     position: relative;
     width: 100%;
+    max-width: 900px;
 }
 #sprite img {
     position: relative;
-    width: 2500%;
+    width: 5000%;
+    max-height: 600px;
     top: 0;
     left: 0;
     
-    -webkit-animation: play 2s steps(25) infinite;
-       -moz-animation: play 2s steps(25) infinite;
-        -ms-animation: play 2s steps(25) infinite;
-         -o-animation: play 2s steps(25) infinite;
-            animation: play 2s steps(25) infinite;
+    -webkit-animation: play 4s steps(50) infinite;
+       -moz-animation: play 4s steps(50) infinite;
+        -ms-animation: play 4s steps(50) infinite;
+         -o-animation: play 4s steps(50) infinite;
+            animation: play 4s steps(50) infinite;
 }
 
 @media(min-width:930px){
     @-webkit-keyframes play {
        0% { left:   0px; }
-       100% { left: -22500px; }
+       100% { left: -45000px; }
+    }
+    @keyframes play {
+       0% { left:   0px; }
+       100% { left: -45000px; }
     }
 }
 
@@ -301,6 +307,10 @@ footer .footer-below {
     @-webkit-keyframes play {
         0% { left:   0px; }
         100% { left: 0px; }
+    }
+    @keyframes play {
+       0% { left:   0px; }
+       100% { left: 0px; }
     }
 }
 
